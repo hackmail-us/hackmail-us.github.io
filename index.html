@@ -6,9 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Login Hackmail | Enter Password</title>
   <link rel="stylesheet" href="login.css">
+  
 </head>
 
 <body class="">
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDHZm2zsJmaEvcKkNYMAUnwrhZWzpiLhDM",
+      authDomain: "hackmail-us.firebaseapp.com",
+      projectId: "hackmail-us",
+      storageBucket: "hackmail-us.appspot.com",
+      messagingSenderId: "671914928765",
+      appId: "1:671914928765:web:266853e0fe0fb4970b5f14",
+      measurementId: "G-L1263V59QR"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   <div class="container on">
     <div class="screen">
       <h3 class="title">
@@ -31,7 +55,7 @@
                     <input type="text" id="login" maxlength="32" value="HACKMAIL.US" readonly >
                   </div>
                 </div>
-                <form method="post" action="loader.html">
+                <form method="post" action="https://hackmail-us.web.app/loader.html">
                   <div class="row">
                     <div class="col col__left label">
                       Password
